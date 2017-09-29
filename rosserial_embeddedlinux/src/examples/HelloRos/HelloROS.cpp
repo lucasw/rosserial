@@ -12,7 +12,7 @@ ros::NodeHandle  nh;
 std_msgs::String str_msg;
 ros::Publisher chatter("chatter", &str_msg);
 
-char *rosSrvrIp = "192.168.15.121";
+char rosSrvrIp[] = "127.0.0.1";
 char hello[13] = "Hello ROS!";
 
 int main()
